@@ -1,0 +1,29 @@
+<form class="card">
+    <div class="center">
+        <img src = {{post.image}} height= "400" width= "700" class="center"/>
+        <div style="text-align:left">
+            <h1>
+                {{post.name}}
+            </h1>
+        </div>
+        <div class="content">
+            <b>Description:</b>
+            <div>
+                <p>{{post.descr}}</p>
+            </div>
+            <b>Address:</b>
+            <div>
+                <p>{{post.address}}</p>
+            </div>
+            <b>Opening Times:</b>
+            <div>
+                <p>{{post.open}}</p>
+            </div>
+            <b>Type:</b>
+            <div>
+                <p>{{post.type}}</p>
+            </div>
+        </div>
+        <button class="btn btn-primary"  type="view" (click)="deletePost(post._id)">Delete Listing</button>
+    </div>
+</form>

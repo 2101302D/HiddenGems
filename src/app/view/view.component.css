@@ -1,0 +1,18 @@
+.content{
+    background-color: rgb(242, 242, 242);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.card {
+  background-color: rgb(223, 244, 250);
+  transition: 0.3s;
+  width: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

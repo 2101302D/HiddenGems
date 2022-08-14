@@ -1,0 +1,20 @@
+<div style="text-align:center">
+    <h1>
+    Welcome!
+    </h1>
+</div>
+<ul>
+<div class="card" *ngFor = "let lists of listing; let i = index">    
+    <div style="text-align:left">
+        <h1>{{lists.name}}</h1>
+    </div>
+    <img src={{lists.image}} height="300" class="center"/>
+    <div class="box">
+        <p> <b>Address:</b> {{lists.address}} </p>
+        <p> <b>Opening Times:</b> {{lists.open}} </p>
+        <p> <b>Type:</b> {{lists.type}} </p>
+        <button class="btn btn-primary"  type="view" (click)="routeToSelected(i)" >See More</button>
+    </div>
+</div>
+</ul>
+    

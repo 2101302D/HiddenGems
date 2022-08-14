@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form class="card">
+<img src ="https://www.judobi.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaXdRIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5298fb4188cd114508cc4f93dc8ba3555164f8a9/old-banner-default.jpg"  height= "400" width="800" class="center"/>
+<h1>Upload A Hidden Gem in Singapore</h1>
+<form [formGroup]="addListing" (ngSubmit)="onSubmit()">
+<div class="container">
+
+        <label for="type">Type:</label>
+        <select formControlName="type" id="type" name="type">
+        <option value="Food">Food</option>
+        <option value="Sightseeing">Sightseeing</option>
+        </select>
+
+        <div>
+            <p><input formControlName="name" id=”name” placeholder="The Name of the Place"></p>
+        </div>
+
+
+        <div>
+            <p><input formControlName="address" id=”address” placeholder="Address of the Place"></p>
+        </div>
+
+
+
+        <div>
+            <p><input formControlName="image" id=”image” type=”image” placeholder="Put Image Address Here If You Have"></p>
+        </div>
+
+
+        <div>
+            <p><input formControlName="open" id=”open” type=”open” placeholder="Opening Time"></p>
+        </div>
+
+        <p><label for=”descr”>Description</label></p>
+        <textarea formControlName="descr" id=”descr” name=”descr” type=”descr” rows="6" cols="100"  placeholder="Type Here"></textarea>
+
+    <div class="row">
+        <div>
+            <p><button class="btn btn-primary"  type="submit">Submit</button> </p>
+        </div>
+    </div>
+</div>
+</form>

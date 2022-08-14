@@ -1,0 +1,12 @@
+<h1>
+  <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" style="width:200px;height:200px;">
+</h1>
+<h2>Sign up</h2>
+
+<form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit()">
+  <p><input formControlName="name" id="name" placeholder="Your name"/></p>
+  <p><input formControlName="password" id="password" placeholder="Your password" /></p>
+  <p><input formControlName="role" id="role" placeholder="user/admin" /></p>
+  <p><button class="btn btn-primary" type="submit" >Register</button></p>
+</form>
+<p><a routerLink="/login" routerLinkActive="active">Login</a></p>
